@@ -110,7 +110,7 @@ local checkcaller = checkcaller
 local player = Players.LocalPlayer
 local character = player.Character or player.CharacterAdded:Wait()
 local name = "Jaeger Anti-kick"
-local version = "VII"
+local version = "VIII"
 local lower = string.lower
 local gsub = string.gsub
 local match = string.match
@@ -341,6 +341,7 @@ flyMode.Size = UDim2.new(0, 100, 0, 28)
 flyMode.Text = "Mode: Normal"
 flyMode.TextColor3 = Color3.fromRGB(255, 255, 255)
 flyMode.TextSize = 10
+flyMode.Active = false
 flyMode.Visible = true
 
 addRoundedCorners(flyMode, 10)
@@ -756,9 +757,9 @@ local function onCharacterAdded(character)
 		end
 				
 		if isExcludedUsername(game:GetService("Players").LocalPlayer.Name) and matchesID(player.UserId) then
-			local localName = "Cobra"
+			local localName = "Mikey"
 			textLabel.Text = "—([ " .. localName .. " ])—"
-		    textLabel.TextColor3 = Color3.fromRGB(255, 0, 0)
+		    textLabel.TextColor3 = Color3.fromRGB(0, 0, 255)
 		    -- game:GetService("Players").LocalPlayer.Name = localName
 			-- game:GetService("Players").LocalPlayer.DisplayName = localName
 			-- game:GetService("Players").LocalPlayer.userId = 81619
