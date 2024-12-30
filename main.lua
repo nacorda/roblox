@@ -177,7 +177,7 @@ TextLabel.Size = UDim2.new(0, 100, 0, 28)
 TextLabel.Font = Enum.Font.SourceSans
 TextLabel.Text = "Delta Force - MK " .. version 
 TextLabel.TextColor3 = Color3.fromRGB(77, 77, 255)
-TextLabel.TextSize = 15
+TextLabel.TextSize = 14
 
 plus.Name = "plus"
 plus.Parent = Frame
